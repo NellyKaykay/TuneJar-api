@@ -1,4 +1,4 @@
-package com.songs.backend.repositories
+package com.example.tunejarappi.repositories
 
 import com.example.tunejarappi.domain.Song
 import org.springframework.data.jpa.repository.JpaRepository
