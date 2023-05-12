@@ -1,4 +1,8 @@
 package com.example.tunejarappi.repositories
 
-interface TuneJarRepository {
-}
+import com.example.tunejarappi.domain.Song
+import org.springframework.data.jpa.repository.JpaRepository
+import org.springframework.stereotype.Repository
+
+@Repository
+interface TuneJarRepository : JpaRepository<Song, Long>
