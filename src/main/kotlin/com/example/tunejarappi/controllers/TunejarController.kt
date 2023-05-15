@@ -14,5 +14,8 @@ import org.springframework.web.bind.annotation.RestController
 class TunejarController(private val tunejarRepository: TuneJarRepository) {
     @GetMapping("/api/songs")
     @ResponseBody
-    fun allSongs(): List<Song> = tunejarRepository.findAll()
+    fun allSongs(): List<Song?>? {
+        return tunejarRepository.findAll()
+
+    }
 }

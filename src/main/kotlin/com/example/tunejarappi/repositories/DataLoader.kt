@@ -2,7 +2,9 @@ package com.example.tunejarappi.repositories
 
 import com.example.tunejarappi.domain.Song
 import jakarta.annotation.PostConstruct
+import org.springframework.stereotype.Component
 
+@Component
 class DataLoader(private val tunejarRepository: TuneJarRepository) {
     @PostConstruct
     fun load() {
