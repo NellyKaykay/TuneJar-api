@@ -10,7 +10,7 @@ class DataLoader(private val tunejarRepository: TuneJarRepository) {
     fun load() {
         val tunejar = listOf(
             Song("Astra", "Asia", "Voice of America ", 1985, "Progressive Rock", "https://open.spotify.com/track/24uVC7odXve5T6bmx0qlUW", "https://i.scdn.co/image/ab67616d0000b2731f7c4da2d7c136970044523e"),
-            Song("From Fear to Eternity", "Iron Maiden", "El dorado", 2011, "Heavy Metal", "https://open.spotify.com/track/24uVC7odXve5T6bmx0qlUW", "img/iron_maiden.jpg"),
+            Song("From Fear to Eternity", "Iron Maiden", "El dorado", 2011, "Heavy Metal", "https://open.spotify.com/track/24uVC7odXve5T6bmx0qlUW", "https://m.media-amazon.com/images/I/91ToMjRTEmL._SL1500_.jpg"),
             Song("Dangerous", "Michael Jackson", "Dangerous", 1991, "Pop", "https://open.spotify.com/track/3u4RKvwDT3CKeYbjxqXEye", "https://i1.wp.com/www.audiograma.com.br/wp-content/uploads/2019/06/michaeljackson-dangerous-cover.jpg?fit=1500%2C1000"),
             Song("In Utero", "Nirvana", "Rape Me", 1993, "Grunge", "https://open.spotify.com/track/2i5K0EdMY5zFs9t7KfYK3k", "https://images.genius.com/8d86b37becd527f7ab8d8fc7de94ce25.1000x1000x1.jpg"),
             Song("yellow submarine", "The Beatles", "Yellow Submarine", 1996, "Rock", "https://open.spotify.com/track/1tdltVUBkiBCW1C3yB4zyD", "https://2.bp.blogspot.com/-EVBA4xZ7wUo/VKAByMPWbvI/AAAAAAAAPOA/uZQ5uRWXsx8/s1600/yelsub_lp.jpg"),
