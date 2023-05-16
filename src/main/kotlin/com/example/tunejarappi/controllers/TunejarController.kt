@@ -2,12 +2,7 @@ package com.example.tunejarappi.controllers
 
 import com.example.tunejarappi.domain.Song
 import com.example.tunejarappi.repositories.TuneJarRepository
-import org.springframework.web.bind.annotation.GetMapping
-import org.springframework.web.bind.annotation.ResponseBody
-import org.springframework.web.bind.annotation.RestController
-
-
-
+import org.springframework.web.bind.annotation.*
 
 
 @RestController
@@ -17,5 +12,9 @@ class TunejarController(private val tunejarRepository: TuneJarRepository) {
     fun allSongs(): List<Song?>? {
         return tunejarRepository.findAll()
 
+    }
+    @PostMapping("/songs")
+    fun addSong(@RequestBody song: Song): Song? {
+        return tunejarRepository.save(song)
     }
 }
