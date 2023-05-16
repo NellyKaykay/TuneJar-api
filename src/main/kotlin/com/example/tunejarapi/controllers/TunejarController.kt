@@ -1,7 +1,7 @@
-package com.example.tunejarappi.controllers
+package com.example.tunejarapi.controllers
 
-import com.example.tunejarappi.domain.Song
-import com.example.tunejarappi.repositories.TuneJarRepository
+import com.example.tunejarapi.domain.Song
+import com.example.tunejarapi.repositories.TuneJarRepository
 import org.springframework.web.bind.annotation.*
 
 

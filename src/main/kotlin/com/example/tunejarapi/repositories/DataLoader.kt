@@ -1,6 +1,6 @@
-package com.example.tunejarappi.repositories
+package com.example.tunejarapi.repositories
 
-import com.example.tunejarappi.domain.Song
+import com.example.tunejarapi.domain.Song
 import jakarta.annotation.PostConstruct
 import org.springframework.stereotype.Component
 

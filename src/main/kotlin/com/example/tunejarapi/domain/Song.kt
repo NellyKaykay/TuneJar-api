@@ -1,4 +1,4 @@
-package com.example.tunejarappi.domain
+package com.example.tunejarapi.domain
 
 import jakarta.persistence.*
 

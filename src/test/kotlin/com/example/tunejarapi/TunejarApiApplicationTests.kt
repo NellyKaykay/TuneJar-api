@@ -1,7 +1,7 @@
-package com.example.tunejarappi
+package com.example.tunejarapi
 
-import com.example.tunejarappi.domain.Song
-import com.example.tunejarappi.repositories.TuneJarRepository
+import com.example.tunejarapi.domain.Song
+import com.example.tunejarapi.repositories.TuneJarRepository
 import org.hamcrest.MatcherAssert.assertThat
 import org.hamcrest.Matchers.equalTo
 import org.hamcrest.Matchers.`is`
@@ -15,7 +15,7 @@ import org.springframework.test.context.ActiveProfiles
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
-class TunejarAppiApplicationTests {
+class TunejarApiApplicationTests {
     @Autowired
     private lateinit var api:TestRestTemplate
     @Autowired
