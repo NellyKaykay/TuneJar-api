@@ -16,7 +16,7 @@ data class Song(
     var genre: String,
     var link: String,
     var cover: String,
-    var favorite: Boolean = false
+    var favorite: Boolean
 ) {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

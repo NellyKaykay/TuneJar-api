@@ -13,7 +13,8 @@ import org.springframework.test.context.ActiveProfiles
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
-class SongLikesTest {
+class
+SongLikesTest {
     @Autowired
     private lateinit var songRepository: SongRepository
 
