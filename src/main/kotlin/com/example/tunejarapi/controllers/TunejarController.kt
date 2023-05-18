@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*
 
 
 @RestController
+@CrossOrigin
 class TunejarController(private val tunejarRepository: TuneJarRepository) {
     @GetMapping("/api/songs")
     @ResponseBody
