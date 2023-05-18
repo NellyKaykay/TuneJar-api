@@ -17,4 +17,8 @@ class TunejarController(private val tunejarRepository: TuneJarRepository) {
     fun addSong(@RequestBody song: Song): Song? {
         return tunejarRepository.save(song)
     }
+    @PutMapping("/songs")
+    fun addFavorite(@RequestBody song: Song): Song? {
+        return tunejarRepository.save(song.favorite)
+    }
 }
