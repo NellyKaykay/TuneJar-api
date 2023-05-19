@@ -24,7 +24,7 @@ class TunejarController(private val tunejarRepository: TuneJarRepository) {
         return tunejarRepository.save(song.favorite)
     }*/
   @PutMapping("/api/songs/{id}/like")
-  fun likeSong(@PathVariable id: Long): ResponseEntity<Unit> {
+  fun likeSong(@PathVariable id: Long): ResponseEntity<Song> {
       val songOptional = tunejarRepository.findById(id)
       if (songOptional.isPresent) {
           val song = songOptional.get()
@@ -36,7 +36,7 @@ class TunejarController(private val tunejarRepository: TuneJarRepository) {
   }
 
     @PutMapping("/api/songs/{id}/dislike")
-    fun dislikeSong(@PathVariable id: Long): ResponseEntity<Unit> {
+    fun dislikeSong(@PathVariable id: Long): ResponseEntity<Song> {
         val songOptional = tunejarRepository.findById(id)
         if (songOptional.isPresent) {
             val song = songOptional.get()
