@@ -30,7 +30,7 @@ class TunejarController(private val tunejarRepository: TuneJarRepository) {
           val song = songOptional.get()
           song.favorite = true
           tunejarRepository.save(song)
-          return ResponseEntity.ok().build()
+          return ResponseEntity.ok(song)
       }
       return ResponseEntity.notFound().build()
   }
@@ -42,7 +42,7 @@ class TunejarController(private val tunejarRepository: TuneJarRepository) {
             val song = songOptional.get()
             song.favorite = false
             tunejarRepository.save(song)
-            return ResponseEntity.ok().build()
+            return ResponseEntity.ok(song)
         }
         return ResponseEntity.notFound().build()
     }
